@@ -168,6 +168,21 @@
             padding: 14px 30px; border-radius: 30px; text-decoration: none; font-size: 0.9rem; font-weight: 600;
         }
 
+        /* --- MÃ QR MỪNG CƯỚI --- */
+        .qr-card {
+            background: var(--white); border: 1px dashed var(--accent); border-radius: 16px;
+            padding: 30px 20px; box-shadow: 0 5px 20px rgba(91, 132, 177, 0.05); margin-top: 20px;
+            text-align: center;
+        }
+        .qr-image {
+            width: 200px; height: 200px; border-radius: 10px; margin-bottom: 15px;
+            border: 1px solid var(--border-light); padding: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .bank-name { font-family: var(--font-heading); font-size: 1.4rem; color: var(--primary); font-weight: 600; margin-bottom: 5px; }
+        .bank-number { font-weight: 700; font-size: 1.2rem; color: var(--text-dark); letter-spacing: 1px; }
+        .bank-owner { font-size: 0.85rem; color: var(--text-medium); text-transform: uppercase; margin-top: 5px; letter-spacing: 1px; }
+
         /* --- RSVP --- */
         .form-input { width: 100%; padding: 15px; border: 1px solid var(--border-light); border-radius: 10px; margin-bottom: 15px; font-family: var(--font-body);}
         .radio-option input { display: none; }
@@ -266,6 +281,23 @@
                     <div class="time-item"><span>10 : 30</span>Đón Khách</div>
                     <div class="time-item"><span>11 : 00</span>Khai Tiệc</div>
                 </div>
+            </div>
+        </section>
+
+        <!-- HỘP MỪNG CƯỚI (QR CODE) -->
+        <section style="background-color: #fcfdfe;" class="scroll-fade-up">
+            <h2 class="section-title">Hộp Mừng Cưới</h2>
+            <p style="font-size: 0.95rem; color: var(--text-medium); margin-bottom: 20px; line-height: 1.6; max-width: 350px; margin-left: auto; margin-right: auto;">
+                Dành cho những người thân thương ở xa muốn gửi gắm lời chúc phúc đến cô dâu và chú rể.
+            </p>
+            <div class="qr-card scroll-zoom-in">
+                <!-- Thay ảnh QR tại đây -->
+                <img src="https://via.placeholder.com/250x250.png?text=M%C3%A3+QR+Ng%C3%A2n+H%C3%A0ng" alt="Mã QR Mừng Cưới" class="qr-image">
+                
+                <!-- Sửa thông tin Ngân hàng tại đây -->
+                <div class="bank-name">Tên Ngân Hàng</div>
+                <div class="bank-number">1234567890</div>
+                <div class="bank-owner">Chủ TK: CÔ DÂU MAI LINH</div>
             </div>
         </section>
 
